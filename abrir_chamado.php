@@ -1,4 +1,13 @@
-<html>
+<?php
+  session_start();
+
+  if ( !isset($_SESSION['Auth']) || !$_SESSION['Auth'] ) {
+    header("Location: index.php?login=erro2");
+  }
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <title>App Help Desk</title>
@@ -18,7 +27,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
     </nav>
