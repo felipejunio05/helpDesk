@@ -38,14 +38,14 @@
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
 
-                <? if ( isset($_GET['login']) && $_GET['login'] === 'erro' ) { ?>
+                <? if ( isset($_GET['login']) && $_GET['login'] === 'erro' ) { // exibe msg de erro para falha no login?>
                   <div class="text-danger pb-2">
                     <i class="fas fa-exclamation-triangle"></i>
                     Usuário ou senha inválido(s)
                   </div>
                 <? } ?>
 
-                <? if ( isset($_GET['login']) && $_GET['login'] === 'erro2' ) { ?>
+                <? if ( isset($_GET['login']) && $_GET['login'] === 'erro2' ) { //exibe msg de erro para acesso não autorizado ?>
                   <div class="text-danger pb-2">
                     <i class="fas fa-exclamation-triangle"></i>
                     Efetue o login para acessar o conteúdo
