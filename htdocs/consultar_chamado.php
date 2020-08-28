@@ -1,7 +1,7 @@
 <? require_once "validador_acesso.php"; ?> 
 
 <?php
-  $oArquivo = fopen('arquivo.bd', 'r'); // abre o arquivo com os registros dos chamados
+  $oArquivo = fopen('../includes/arquivo.bd', 'r'); // abre o arquivo com os registros dos chamados
   $aChamados = []; // define um array vazio
 
   //recupera os dados do arquivo e os converte para um formato de array

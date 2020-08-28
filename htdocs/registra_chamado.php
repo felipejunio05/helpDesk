@@ -8,7 +8,7 @@
     //convertendo array para texto com aplicação do delimitador '::'
     $cConteudo = $_SESSION['id'] . '::' . implode('::', $_POST) . PHP_EOL;
 
-    $oArquivo = fopen('arquivo.bd', 'a'); //Abrindo arquivo para armazenar os chamados
+    $oArquivo = fopen('../includes/arquivo.bd', 'a'); //Abrindo arquivo para armazenar os chamados
     fwrite($oArquivo, $cConteudo); //Gravando no arquivo
     fclose($oArquivo); //Fechando o arquivo
 
