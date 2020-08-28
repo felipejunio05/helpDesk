@@ -1,10 +1,4 @@
-<?php
-  session_start();
-
-  if ( !isset($_SESSION['Auth']) || !$_SESSION['Auth'] ) {
-    header("Location: index.php?login=erro2");
-  }
-?>
+<? require_once "validador_acesso.php"; ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
