@@ -48,7 +48,7 @@
                 <? if ( isset($_GET['login']) && $_GET['login'] === 'erro2' ) { ?>
                   <div class="text-danger pb-2">
                     <i class="fas fa-exclamation-triangle"></i>
-                    Efetue o login para acesso do conteudo
+                    Efetue o login para acessar o conteúdo
                   </div>
                 <? } ?>
 
