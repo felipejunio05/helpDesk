@@ -17,10 +17,12 @@
     //valida se autenticação ocorreu com sucesso Usuário e senha correta.
     if ($bAuthOk) {
         $_SESSION['Auth'] = true;
+        header('Location: home.php');
+        
     }
  
     else {
-        header('Location: index.php?login=erro');
         $_SESSION['Auth'] = false;
+        header('Location: index.php?login=erro');
     }
 ?>
